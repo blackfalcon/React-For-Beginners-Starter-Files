@@ -21,3 +21,69 @@
 		}
 	});
 	```
+	
+* Props: Exactly like attributes in HTML, but are attributes of React HTML components. 
+	
+	```
+	// 'Header' is a React component, 'tagline' is a Prop
+	<Header tagline="Fresh food for Sea Dawgs!"/>
+	
+	// h3 is a HTML element using the Prop to populate the DOM
+	<h3 className="tagline">{this.props.tagline}</h3>
+	```
+	
+* React does not come with a build in router, need to install `react-router`
+	* Routes are written in JSX versus JS
+	
+	```
+	var routes = (
+	  <Router history={createBrowserHistory()}>
+	    <Route path="/" component={StorePicker} />
+	    <Route path="/store/:storeId" component={App} />
+	    <Route path="*" component={notFound404} />
+	  </Router>
+	);
+	```
+	
+	* Browser history is awkward in React due to additional engineering over `History.pushState()` support. 
+	* npm history for cleaner JS browser history support
+	* require in header variables;
+	
+	```
+	createBrowserHistory = require('history/lib/createBrowserHistory')
+	```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
