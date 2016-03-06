@@ -54,7 +54,10 @@
 	```
 
 
-
+* Helpers; more on this later for sure, but the concept again seems as another use for JS functions.
+	* Helpers in this sense are simply a series of pre-fab functions that are under the scope of `helper`. Call it tools or helper-functions. There is no official scope of a 'helper', as I can see this. 
+	
+* Event Listeners 
 
 
 
