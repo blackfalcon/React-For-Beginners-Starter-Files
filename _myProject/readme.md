@@ -58,6 +58,12 @@
 	* Helpers in this sense are simply a series of pre-fab functions that are under the scope of `helper`. Call it tools or helper-functions. There is no official scope of a 'helper', as I can see this. 
 	
 * Event Listeners 
+	* Happens inline with react components using HTML standards
+	* using the attr `onSubmit` pass in the React JS with `={}`
+	* Create the submit function within the scope of the class or inject a reusable component. 
+
+
+* The use of __Mixins__ in React is not recommended, in fact it's pretty much deprecated
 
 
 
