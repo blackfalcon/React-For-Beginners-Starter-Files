@@ -55,7 +55,8 @@
 
 
 * Helpers; more on this later for sure, but the concept again seems as another use for JS functions.
-	* Helpers in this sense are simply a series of pre-fab functions that are under the scope of `helper`. Call it tools or helper-functions. There is no official scope of a 'helper', as I can see this. 
+	* Helpers in this sense are simply a series of pre-fab functions that are under the scope of `helper`. I feel like I can call it `tools` or `helper-functions`? Is there is no official scope of a 'helper'? I can't can see this. 
+	* Really ... what is the difference between this `helpers` concept and `mixins`? 
 	
 * Event Listeners 
 	* Happens inline with react components using HTML standards
@@ -65,8 +66,18 @@
 
 * The use of __Mixins__ in React is not recommended, in fact it's pretty much deprecated
 
+* State in React is interesting as the STATE of data is not kept in the HTML as may other frameworks do, but STATE is kept in a JavaScript object and React updates the DOM based on the STATE of the data
+	* So ... `state` in React is referring to `data within the view`?
+	* `getInitialState` is something to be aware of ... it's considered an [anti-pattern](https://facebook.github.io/react/tips/props-in-getInitialState-as-anti-pattern.html) if it is not clearly stating that this is seed data 
+	
+* Using a `spread` to transfer data (or state) between components 
+	* within the scope of the form that is handling the data, use Props within the React component and add `{...this.props}`
+	
+		```
+		<ReactComponent {...this.props} />
+		```
 
-
+	* [read more](https://facebook.github.io/react/docs/transferring-props.html#transferring-with-...-in-jsx) 
 
 
 
